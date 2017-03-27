@@ -52,7 +52,7 @@ public class GraphViewController: UIViewController {
     }
 
     var traces: [Trace] {
-        return Array(diffStrings.0.characters).diffTraces(Array(diffStrings.1.characters))
+        return Array(diffStrings.0.characters).diffTraces(to: Array(diffStrings.1.characters))
     }
 
     func display(range: Range<Int>? = nil) {
